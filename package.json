@@ -1,0 +1,14 @@
+{
+  "name": "mathlearn",
+  "version": "2.0.0",
+  "description": "typescript funds.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "Chandan",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}

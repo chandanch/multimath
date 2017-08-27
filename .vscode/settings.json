@@ -1,0 +1,18 @@
+{
+    "vsicons.presets.angular": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true
+    },
+
+    "editor.fontSize": 16,
+    "editor.quickSuggestions": true,
+    "editor.parameterHints": true,
+    "editor.wordBasedSuggestions": true,
+    "editor.selectionHighlight": true,
+    "editor.suggestOnTriggerCharacters": false,
+    "window.zoomLevel": 0,
+    "editor.cursorBlinking": "solid"
+}
