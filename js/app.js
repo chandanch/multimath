@@ -3,6 +3,7 @@ function startGame() {
     var messageElement = document.getElementById('messages');
     messageElement.innerText = "Game Started!! lets dive in";
     var playerName;
+    playerName = null;
     logPlayerName(playerName);
 }
 function logPlayerName(name) {
