@@ -2,7 +2,7 @@ console.log("Start the typescript game");
 function startGame() {
     var messageElement = document.getElementById('messages');
     messageElement.innerText = "Game Started!! lets dive in";
-    var playerName = "Chandio";
+    var playerName;
     logPlayerName(playerName);
 }
 function logPlayerName(name) {
