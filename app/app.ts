@@ -53,7 +53,7 @@ document.getElementById('startGame')!.addEventListener('click',startGame);
     use of arrow functions to log messages
     statement to the right of the = of the log message represents the arrow function
     right of the => represents the function body of the arrow function
-    if the parameters to the arrow function is zero or more then add the ()
+    if the parameters to the arrow function is zero or more then one add the ()
     if there is only one parameter then no need of (). Exception: if the type of the single parameters
     is specified use the ()
 */
