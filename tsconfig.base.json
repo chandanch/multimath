@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    // check if the variable or function return type is implicitly given any type
     "noImplicitAny": true,
     "sourceMap": true,
     "watch": true,
