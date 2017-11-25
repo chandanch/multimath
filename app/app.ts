@@ -63,23 +63,15 @@ let logMessage = (message: string) => console.log(message);
 let logError = (message: string) => {
     console.error(message);
 }
-
-/*
-    Creating an Interface
+/*  creating an instance of a class
+    To create an instance of a class declare a variable of the class type
+    use the new keyword to call the classes constructor and to create an instance
+    of a class.
 */
-// create an object literal of type Result
-let myResult: Result = {
-    playerName: 'Chan',
-    score: 60,
-    factor: 5,
-    problemCount: 7
-}
-
-// create an object literal of type Person
-let player: Person = {
-    name: 'Chan',
-    age: 23,
-    formatName: () => {
-        'dan'
-    }
-}
+// creating an instance of Player class - firstPlayer has the copy of the class
+let firstPlayer: Player = new Player();
+// access the class memebers i.e. the property of the class
+firstPlayer.name = 'Chandio';
+firstPlayer.highScore = 34;
+// access the methods of the class
+console.log(firstPlayer.formatName());
