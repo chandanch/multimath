@@ -33,6 +33,8 @@ function postScore(playerName?: string, score: number = 0): void {
     */
     let logger: (value: string) => void;
     if(score < 0) {
+        // assing logger to logError() since logError accepts same parameters
+        // and has the same return type
         logger = logError;
     }
     else {
