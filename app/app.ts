@@ -8,6 +8,8 @@ function startGame() {
     let playerName : string;
     playerName = getPlayerName();
     postScore(playerName, 300);
+    //postScore(playerName, -3);
+    logMessage(`${playerName}`);
 }
 
 /**
@@ -25,7 +27,7 @@ function postScore(playerName?: string, score: number = 0): void {
         playerName = 'Multimath App'
     }
     let scoreElement: HTMLElement = (<HTMLElement>document.getElementById('postedScores'));
-    scoreElement.innerText = `${playerName} : ${score}`;  
+    scoreElement.innerText = `${playerName} : ${score}`; 
 }
 
 function logPlayerName(name: string)  {
@@ -33,3 +35,16 @@ function logPlayerName(name: string)  {
 }
 // use of non null assertion operator
 document.getElementById('startGame')!.addEventListener('click',startGame);
+
+/*  Arrow Functions:
+    use of arrow functions to log messages
+    statement to the right of the = of the log message represents the arrow function
+    right of the => represents the function body of the arrow function
+    if the parameters to the arrow function is zero or more then add the ()
+    if there is only one parameter then no need of (). Exception: if the type of the single parameters
+    is specified use the ()
+*/
+let logMessage = (message: string) => console.log(message);
+let logError = (message: string) => {
+    console.error(message);
+}
