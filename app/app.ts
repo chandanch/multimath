@@ -26,8 +26,21 @@ function postScore(playerName?: string, score: number = 0): void {
     if(playerName == null) {
         playerName = 'Multimath App'
     }
+    /* 
+        declare a variable as function type
+        we can assing a function to this variable which takes:
+        string as a parameter and the return type of it is void
+    */
+    let logger: (value: string) => void;
+    if(score < 0) {
+        logger = logError;
+    }
+    else {
+        logger = logMessage;
+    }
     let scoreElement: HTMLElement = (<HTMLElement>document.getElementById('postedScores'));
     scoreElement.innerText = `${playerName} : ${score}`; 
+    logger(`${score}`); 
 }
 
 function logPlayerName(name: string)  {
