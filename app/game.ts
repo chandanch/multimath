@@ -6,6 +6,11 @@
 class Game {
     private scoreboard: Scoreboard = new Scoreboard();
     
+    /*  use of parameter properties
+        parameter properties are the properties that are created when passing parameters to the
+        constructor
+        these properties must have a access modifier
+    */
     constructor(public player: Player, public problemCount: number, public factor: number) {
     }
 
