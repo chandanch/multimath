@@ -63,3 +63,23 @@ let logMessage = (message: string) => console.log(message);
 let logError = (message: string) => {
     console.error(message);
 }
+
+/*
+    Creating an Interface
+*/
+// create an object literal of type Result
+let myResult: Result = {
+    playerName: 'Chan',
+    score: 60,
+    factor: 5,
+    problemCount: 7
+}
+
+// create an object literal of type Person
+let player: Person = {
+    name: 'Chan',
+    age: 23,
+    formatName: () => {
+        'dan'
+    }
+}
